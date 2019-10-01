@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <title>demo1</title>
+</head>
+<body>
+    <div class="bg latitude_spacearound">
+        <div style="background:chartreuse;width:200px;height: 200px;"></div>
+        <div style="background:#d2691e;width:200px;height: 200px;"></div>
+        <div style="background: #333333;;width:200px;height: 200px;"></div>
+    </div>
+</body>
+</html>
+<style>
+    .bg{
+        background: red;
+        width: 800px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    /* 设置在父元素上，子元素在父元素上居中 */
+    .center_all{
+        display: flex;
+        justify-content: center; /*用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。*/
+        align-items: center;/*对齐交叉轴上的各项（垂直）*/
+    }
+    /* 垂直居中 */
+    .center_align{
+        display: flex;
+        align-items: center;
+    }
+    /* 水平方向均等排列 */
+    .latitude_spacearound{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+</style>
+<script>
+    /**
+    async function getSum(sum){
+        let num=await getNum(3)
+        let price=await getPrice(2)
+        return alert(num*price)
+    }
+    getSum("goog").then((res)=>{
+        console.log(res)
+    }).catch((err)=>{
+        console.log(err)
+    })
+    function getNum(num){
+        return num
+    }
+    function getPrice(price){
+        return price
+    }
+    */
+</script>
